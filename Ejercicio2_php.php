@@ -6,7 +6,7 @@ $x = array(10, 20, 30, 40, 50, 60);
 var_dump($x);//incluye el tipo de valor
 
 //mostrar tamaño del array con count
-echo count($x);
+echo count($x) . "</br>";
 
 //print_r($x); solo muestra su contenido en cada psoicion
 //echo $x[0]; imprimir una sola posicion
@@ -14,9 +14,11 @@ echo count($x);
 //eliminar un elemento
 unset ($x[1]);
 print_r($x);
-echo count($x);
+echo count($x) . "</br>";
 
 //claves enteras deben ser normalizadas 
+sort($x);
+var_dump($x);
 
 
 
