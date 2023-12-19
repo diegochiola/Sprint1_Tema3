@@ -3,7 +3,7 @@
 //$palabras = array[]
 $palabras = array("Hola", "Honduras", "Hechizo", "Homero");
 $caracter = "H";
-//echo strpos($palabras[2], $caracter);
+
 
 function encontrarCaracter(array $palabras, string $caracter): bool{
     //recorrer array strpos($mystring, $findme);
@@ -16,9 +16,17 @@ function encontrarCaracter(array $palabras, string $caracter): bool{
     return true;
 }
 
+//Prueba 1 (todas las palabras con el caracter "h").
 $respuesta =  encontrarCaracter($palabras, $caracter);
-($respuesta) ? "True" :" False";
-echo $respuesta;
+echo ($respuesta) ? "Todas las palabras del array contienen la letra $caracter. </br>" :"No todas las palabras del array contienen la letra $caracter. </br>";
+
+
+//Prueba 2 (no todas las palabras con el caracter "h")
+$palabras = array("Morir", "Honduras", "Migas", "Homero");
+$caracter = "H";
+$respuesta =  encontrarCaracter($palabras, $caracter);
+//echo($respuesta) ? "True </br>" :"False </br>";
+echo ($respuesta) ? "Todas las palabras del array contienen la letra $caracter. </br>" :"No todas las palabras del array contienen la letra $caracter. </br>";
 
 
 
